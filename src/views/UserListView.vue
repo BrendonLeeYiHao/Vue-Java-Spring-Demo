@@ -25,15 +25,14 @@
     </el-table-column>
   </el-table>
 
-  <el-dialog v-model="dialogVisible" :title="$t('update_user')" width="500">
+  <el-dialog v-model="dialogVisible" :title="$t('update_user')" width="350">
     <el-form
       ref="ruleFormRef"
-      style="max-width: 700px; margin: auto; padding: 0px 5px"
+      style="max-width: 350px; margin: auto"
       :model="updatedForm"
       status-icon
       :rules="rules"
       label-width="auto"
-      class="demo-ruleForm"
       size="large"
     >
       <h2 style="text-align: center; padding-bottom: 20px">{{ $t('existing_user') }}</h2>

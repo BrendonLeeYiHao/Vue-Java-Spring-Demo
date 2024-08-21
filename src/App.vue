@@ -18,9 +18,11 @@
     </el-menu-item>
     <el-sub-menu index="3">
       <template #title>{{ $t('language') }}</template>
-      <el-menu-item @click="changeLanguage('en')">English</el-menu-item>
-      <el-menu-item @click="changeLanguage('zh')">中文</el-menu-item>
-      <el-menu-item @click="changeLanguage('ms_MY')">Bahasa Melayu</el-menu-item>
+      <el-menu-item class="submenu-item" @click="changeLanguage('en')">English</el-menu-item>
+      <el-menu-item class="submenu-item" @click="changeLanguage('zh')">中文</el-menu-item>
+      <el-menu-item class="submenu-item" @click="changeLanguage('ms_MY')"
+        >Bahasa Melayu</el-menu-item
+      >
     </el-sub-menu>
   </el-menu>
   <RouterView />
@@ -90,6 +92,9 @@ updateEllipsis()
   .el-menu-item {
     max-width: 110px;
     font-size: 11px;
+  }
+  .submenu-item {
+    max-width: 100%;
   }
 }
 </style>
